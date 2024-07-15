@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "2e72af8d-adbf-4f11-bbf6-a5d0e87136da",
+		"name": "Task Manger API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32224262"
+	},
+	"item": [
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "Get All Tasks",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTUxY2U4ZGNlOGE4MWQwZmFjYWFhMiIsImlhdCI6MTcyMTA1NTk1MiwiZXhwIjoxNzI4ODMxOTUyfQ.sUzdgRGnilj6rs9PlB54fLD6aTIJkY0Vhn9B3lhxBPM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:3000/api/v1/tasks"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTUxY2U4ZGNlOGE4MWQwZmFjYWFhMiIsImlhdCI6MTcyMTA1NTk1MiwiZXhwIjoxNzI4ODMxOTUyfQ.sUzdgRGnilj6rs9PlB54fLD6aTIJkY0Vhn9B3lhxBPM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\" : \"buy something\",\r\n    \"type\":\"text\",\r\n    \"body\":\"this is the task body\",\r\n    \"shared\":true,\r\n    \"user\":\"66951ce8dce8a81d0facaaa2\",\r\n    \"category\":\"66953e62525f3f93f325829d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3000/api/v1/tasks"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Task",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update Task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTUxY2U4ZGNlOGE4MWQwZmFjYWFhMiIsImlhdCI6MTcyMTA1NTk1MiwiZXhwIjoxNzI4ODMxOTUyfQ.sUzdgRGnilj6rs9PlB54fLD6aTIJkY0Vhn9B3lhxBPM"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"shared\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3000/api/v1/tasks/669548fe20fbc4ed5f6809df"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Task",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTUxY2U4ZGNlOGE4MWQwZmFjYWFhMiIsImlhdCI6MTcyMTA1NTk1MiwiZXhwIjoxNzI4ODMxOTUyfQ.sUzdgRGnilj6rs9PlB54fLD6aTIJkY0Vhn9B3lhxBPM"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://127.0.0.1:3000/api/v1/tasks/669548fe20fbc4ed5f6809df"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Get All Categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTUxY2U4ZGNlOGE4MWQwZmFjYWFhMiIsImlhdCI6MTcyMTA1NTk1MiwiZXhwIjoxNzI4ODMxOTUyfQ.sUzdgRGnilj6rs9PlB54fLD6aTIJkY0Vhn9B3lhxBPM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:3000/api/v1/categories"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Catrgory",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTUxY2U4ZGNlOGE4MWQwZmFjYWFhMiIsImlhdCI6MTcyMTA1NTk1MiwiZXhwIjoxNzI4ODMxOTUyfQ.sUzdgRGnilj6rs9PlB54fLD6aTIJkY0Vhn9B3lhxBPM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"to do\",\r\n    \"user\":\"66951ce8dce8a81d0facaaa2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3000/api/v1/categories"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTUxY2U4ZGNlOGE4MWQwZmFjYWFhMiIsImlhdCI6MTcyMTA1NTk1MiwiZXhwIjoxNzI4ODMxOTUyfQ.sUzdgRGnilj6rs9PlB54fLD6aTIJkY0Vhn9B3lhxBPM"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"bla bla\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3000/api/v1/categories/6695483c20fbc4ed5f6809d6"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTUxY2U4ZGNlOGE4MWQwZmFjYWFhMiIsImlhdCI6MTcyMTA1NTk1MiwiZXhwIjoxNzI4ODMxOTUyfQ.sUzdgRGnilj6rs9PlB54fLD6aTIJkY0Vhn9B3lhxBPM"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://127.0.0.1:3000/api/v1/categories/6695483c20fbc4ed5f6809d6"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "SignUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"zahra\",\r\n    \"email\":\"zahra@gmail.com\",\r\n    \"password\":\"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3000/api/v1/users/register"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"jwt\", pm.response.json().token);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"shadyyy@gmail.com\",\r\n    \"password\":\"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3000/api/v1/users/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTUzOGJjNTI1ZjNmOTNmMzI1ODI4MyIsImlhdCI6MTcyMTA1NTQyMCwiZXhwIjoxNzI4ODMxNDIwfQ.lBLUuA1DDG4VIK-gmU1TuE7ogMC4mQCmMqHpqwTF8eE"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:3000/api/v1/users/669538bc525f3f93f3258283"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTUzOGJjNTI1ZjNmOTNmMzI1ODI4MyIsImlhdCI6MTcyMTA1NTQyMCwiZXhwIjoxNzI4ODMxNDIwfQ.lBLUuA1DDG4VIK-gmU1TuE7ogMC4mQCmMqHpqwTF8eE"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:3000/api/v1/users"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTUzOGJjNTI1ZjNmOTNmMzI1ODI4MyIsImlhdCI6MTcyMTA1NTQyMCwiZXhwIjoxNzI4ODMxNDIwfQ.lBLUuA1DDG4VIK-gmU1TuE7ogMC4mQCmMqHpqwTF8eE"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://127.0.0.1:3000/api/v1/users/669538bc525f3f93f3258283"
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OTUxY2U4ZGNlOGE4MWQwZmFjYWFhMiIsImlhdCI6MTcyMTA1NTk1MiwiZXhwIjoxNzI4ODMxOTUyfQ.sUzdgRGnilj6rs9PlB54fLD6aTIJkY0Vhn9B3lhxBPM"
+							}
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Shady Radwan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:3000/api/v1/users/669538bc525f3f93f3258283"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
